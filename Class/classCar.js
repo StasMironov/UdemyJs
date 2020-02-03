@@ -10,6 +10,11 @@ export default class Car {
     render(x) {
         
         let i = 0;
-        document.querySelector(x).textContent = this.brand;
+
+        for(var key in this){  
+          document.querySelectorAll(x)[i].textContent = this[key];
+          console.log(key);
+          i++;
+        }
     }
 }

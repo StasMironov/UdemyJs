@@ -57,6 +57,7 @@ let img = 'https://cdn0.iconfinder.com/data/icons/cars-22/512/Ford-128.png',
     man = new Man(170, 65, 24, 'man', 'Stas', 1234, 'black' ),
     car = new Car('ford', 'test', 1500, 'C4', 'black', img );
 // console.log(man);
-car.render('.features-list li');
+
+car.render('.features-list > li');
 
 
